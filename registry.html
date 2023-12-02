@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAYIT OL</title>
+
+
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+
+
+
+    <style>        
+    
+    *{
+        box-sizing: border-box;
+    } 
+
+          
+    html, body{
+        margin: 0;
+        padding: 0;
+        height: 105%;        
+        font-family: Arial, Helvetica, sans-serif;        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url(back1.jpg);
+        background-size: 100% 100%;
+        background-position: center; 
+        background-repeat: no-repeat;
+        font-family:  'Harry Potter', sans-serif; 
+    }
+
+    h1{
+        color: aliceblue;
+        margin: auto;
+        margin-top: 60px;
+        margin-left: 600px;
+        font-size: 80px;
+        text-shadow: 10px 10px 30px white;
+    }
+
+    h2{
+        color: aliceblue;
+        margin-top: 15px;
+        margin-left: 440px;
+        font-size: 40px;
+    }
+
+    #label1{
+        color: aliceblue;
+        margin-top: 15px;
+        margin-left: 840px;
+        font-size: 30px;
+    }
+
+
+    
+    #label2{
+        color: aliceblue;
+        margin-top: 15px;
+        margin-left: 820px;
+        font-size: 30px;
+    }
+
+    
+    #label3{
+        color: aliceblue;
+        margin-top: 15px;
+        margin-left: 900px;
+        font-size: 30px;
+    }
+
+    #isim{        
+        color: #152024;
+        background-color: plum;
+        margin-bottom: 5px;
+        margin-left: 745px;
+        font-size: 30px;
+    }
+
+    #email{        
+        color: #152024;
+        background-color: plum;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 745px;
+        font-size: 30px;
+    }
+
+    #sifre{        
+        color: #152024;
+        background-color: plum;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 745px;
+        font-size: 30px;
+    }
+    
+
+    #buton{
+        text-decoration: none;
+        font-size: 20px;
+        margin: 10px;
+        margin-left: 780px;
+        display: inline-block;                       
+        padding: 20px 100px;
+        border: 1px solid #152024;
+        color: #152024;
+        background-color: plum;
+        transition: background-color 1s, color 1s;
+    }  
+         
+    #buton:hover{
+        color: plum;
+        background-color: #152024;
+    }
+
+    form p{               
+        color: aliceblue;
+        margin-top: 20px;
+        margin-left: 680px;
+        font-size: 30px; 
+    }
+
+    form small{               
+        color: aliceblue;
+        margin-left: 680px;
+    }
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <h1>HARRY POTTER</h1>
+
+    <h2>HOGWARTS EVINE KATILMAK ICIN KAYIT OLUN!</h2>
+    
+
+	<form>
+		<label id="label1">ISIM SOYISIM</label><br><br>
+
+		<input type="text" name="isim" placeholder="İsim Soyisim" id="isim"><br><br>
+
+
+		<label id="label2">EMAIL ADDRESS</label><br><br>
+
+		<input type="email" name="" placeholder="...@..com" id="email"><br><br>
+
+		<label id="label3">SIFRE</label><br><br>
+
+		<input type="password" name="" id="sifre" placeholder="********"><br><br>
+
+		<p> Şifrelerin Catal dilinde olmasi gerekmez. <br> Ancak en az 8 karakter içermeleri gerekir! </p>
+
+        <a href="index.html" id="buton"> KAYIT OL </a>
+
+        <br><br><br><br><br>
+
+        <small>Bu site ... tarafindan korunmaktadir ve Google Gizlilik Politikasi ile Hizmet Sartlari geçerlidir.</small>
+	</form>
+
+    
+
+
+    <script>
+
+        let button = document.getElementById("buton");
+
+        button.onclick = function(){
+
+        let email = document.getElementById("email").value;
+        let sifre = document.getElementById("sifre").value;
+
+
+        if(!email.includes("@")){
+            alert("Girdiğiniz mail adresine @ işareti eklemediniz. Lütfen tekrar giriniz.");
+            href="registry.html";
+        }
+        else if(sifre.length <8){
+            alert("Şifre en az 8 karakterli olmalı.");
+            href="registry.html";
+        }
+        else{
+            alert("HOŞGELDİNİZ...");            
+        }
+    }
+
+    </script>
+
+
+    
+</body>
+</html>

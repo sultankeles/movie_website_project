@@ -1,0 +1,460 @@
+
+    *{
+        box-sizing: border-box;
+    }  
+    
+    
+    html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;        
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(rgb(57, 78, 80), rgb(34, 43, 46), rgb(57, 78, 80)), url("1.gif");
+        
+    }
+
+            /* NAV */
+    
+
+        nav{
+            background-color: #152024 ;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: 'Harry Potter', sans-serif;
+        }
+
+        nav ul{
+            margin: 0;
+            padding: 10px;
+        }
+
+        nav ul li{
+            display: inline;
+            list-style-type: none;
+            margin: 60px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #C1994B ;                       
+            padding: 5px 10px;
+            border-radius: 6px ;
+            border: 1px solid #152024 ;
+            background-color: #152024 ;
+            transition: background-color 1s, color 1s;
+        }
+
+        nav ul li a:hover{
+            background-color: #C1994B ;
+            color: #152024 ;
+            border-radius: 6px;
+            box-shadow: 3px 3px 10px #C1994B;
+        }
+
+        .right{
+            margin: 0;
+            height: 20px;
+        }
+    
+
+    
+            /* HERO IMAGE */
+
+
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("2.gif");
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; 
+        box-shadow: 40px 40px 60px 50px rgb(76, 96, 116);  
+    }
+    
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      letter-spacing: 25px;      
+      font-family: 'Harry Potter', sans-serif;
+      text-shadow: 3px 3px 50px rgb(212, 194, 160);
+    }
+
+
+    .animate{
+
+    color: orange;
+    animation: fade 5s infinite;
+
+    }
+    
+    @keyframes fade{
+    0%{
+        color: rgb(221, 168, 70);
+    }
+    50%{
+        color: rgb(233, 200, 139);
+    }
+    100%{
+        color: orange;
+    }
+
+    }
+    
+
+    
+    /* MOVIE IMAGE */
+
+
+.film-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("3.gif");
+height: 600px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+box-shadow: 40px 40px 60px 40px slategrey;
+text-shadow: 5px 5px 20px rgb(212, 194, 160);   
+}
+
+.film-text {
+text-align: center;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -50%);
+letter-spacing: 25px;      
+font-family: 'Harry Potter', sans-serif;
+}
+
+
+.animate{
+color: orange;
+animation: fade 5s infinite;
+
+}
+
+@keyframes fade{
+0%{
+color: rgb(221, 168, 70);
+}
+50%{
+color: rgb(233, 200, 139);
+}
+100%{
+color: orange;
+}
+
+}
+    
+    /* INDEX */
+    
+
+    .new1{
+        width: 350px;
+        height: 400px;
+        margin-left: 400px;
+        background-image: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)), url(newWarner.jpg);
+        background-position: center;
+        background-size: cover;
+        font-size: 20px;         
+        border-radius: 10px; 
+        float: left;
+    }
+
+    .new1:hover{
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px 20px #152024;
+    }
+
+    .new1 p{
+        color: white;
+        font-size: 25px;
+        margin-top: 250px;
+        margin-left: 10px;  
+        text-decoration: none;      
+        font-family: 'Harry Potter', sans-serif;
+        float: left;
+    }
+
+
+    .new2{
+        width: 350px;
+        height: 400px;
+        margin-left: 1100px;
+        margin-bottom: 200px;
+        background-image: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)),  url(news.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-size: 20px;        
+        border-radius: 10px; 
+    }
+
+    .new2:hover{
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px 20px #152024;
+    }
+
+
+    .new2 p{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;      
+        font-family: 'Harry Potter', sans-serif;
+        margin-top: 100px;
+        margin-left: 10px; 
+    }
+
+    
+
+            /* FOOTER */
+    
+        .cls_footer{
+            width: 100%;
+            height: 100px;
+            background-color: #212E31 ;
+            margin-bottom: 0;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner_footer{
+            width: 50%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_left{
+            border-right: 1px solid rgb(204, 143, 62);
+            text-align: center;
+            line-height: 5px;
+            letter-spacing: 2px;
+        }
+
+        .footer_left p{
+            color: rgb(127, 255, 234);
+            font-size: 10px;
+            letter-spacing: 5px;      
+            font-family: 'Harry Potter', sans-serif;
+            text-shadow: 2px 2px 8px rgb(175, 218, 221);  
+        }
+
+        .footer_right small{            
+            color: rgb(132, 180, 172);
+            letter-spacing: 2px;      
+            font-family: 'Harry Potter', sans-serif;
+            text-shadow: 2px 2px 8px rgb(175, 218, 221);    
+        }
+    
+        .sosyalMedya{
+            position: fixed;
+            bottom: 0;
+            margin-left: 0;            
+        }
+    
+        .sosyalMedya ul{
+            list-style-type: none;
+        }
+    
+        .sosyalMedya ul li a{
+            color: rgb(221, 168, 70);
+        }
+    
+        .sosyalMedya ul li a:hover{
+            color: rgb(9, 30, 32);
+        }
+      
+    
+
+
+
+        /* SUMMARY */ 
+
+    .konu-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("1.gif");
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;  
+        box-shadow: 10px 10px 50px 10px rgba(189, 172, 149, 0.459);    
+    }
+
+    .konu-text {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      letter-spacing: 25px;      
+      font-family: 'Harry Potter', sans-serif;
+      text-shadow: 3px 3px 50px rgb(165, 151, 126);
+    }
+
+
+
+    .animate{
+
+    color: orange;
+    animation: fade 5s infinite;
+
+    }
+    
+    @keyframes fade{
+    0%{
+        color: rgb(221, 168, 70);
+    }
+    50%{
+        color: rgb(233, 200, 139);
+    }
+    100%{
+        color: orange;
+    }
+
+    }        
+        
+
+    .ozet{
+        width: 80%;
+        overflow: visible;   /* ----> Border yazı uzunluğuna göre boyutlandırıldı. */
+        border: 2px dashed rgb(204, 143, 62) ;
+        font-size: 25px;
+        color: rgb(108, 129, 129);
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .ozet p{
+        margin: 50px;
+        font-family: 'Harry Potter', sans-serif;
+        text-shadow: 10px 5px 20px rgba(189, 172, 149, 0.459);
+    }
+
+    /* MOVIES */
+
+    .main{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .baslik h2{
+        padding: center;
+        text-shadow: 20px 20px 30px rgb(1, 8, 10);
+    }
+    
+    #seri{
+        margin-left: 800px;
+        margin-top: 100px;
+        font-size: 50px;
+        letter-spacing: 15px;
+        color: #C1994B;    
+        font-family: 'Harry Potter', sans-serif;
+    }
+
+    .seri1{
+        width: 100%;
+        padding:  40px;
+        padding-top: 40px ;
+    }
+
+    .seri2{
+        width: 100%;
+        padding: 40px;
+        padding-top: 400px;
+    }
+
+
+    .column-25{
+        float: left;
+        padding: 30px;
+    }
+
+
+    .column-25{
+        width: 25%;
+    }
+
+    .column-25 img{
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px 5px #C1994B;
+    }
+
+
+    /* BOOKS */
+
+    .main2{
+        width: 100%;
+        background-image: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)),  url(kitapback.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+        .main2 h1{            
+            text-shadow: 3px 3px 50px rgb(212, 194, 160);
+        }
+
+
+        .animate{
+            text-align: center;
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            letter-spacing: 25px;      
+            font-family: 'Harry Potter', sans-serif;
+            color: orange;
+            animation: fade 5s infinite;
+        
+        }
+        
+        @keyframes fade{
+        0%{
+        color: rgb(221, 168, 70);
+        }
+        50%{
+        color: rgb(233, 200, 139);
+        }
+        100%{
+        color: orange;
+        }
+        
+        }
+    
+        #kitapTanitim{
+            margin: 0;
+            margin-left: 20px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-top: 300px;
+            padding-bottom: 50px;
+            font-size: 20px;
+            text-shadow: 3px 3px 15px wheat;
+            color: antiquewhite;
+            letter-spacing: 2px;
+            font-family: 'Harry Potter', sans-serif;
+        }
+       
+
+        .kitap img{
+            float: left;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        #harry{
+            color: white;
+            text-shadow: 2px 2px 10px;
+            font-size: small;
+            letter-spacing: 2px;
+            padding-top: 15px;
+            font-family: 'Harry Potter', sans-serif;
+        }
